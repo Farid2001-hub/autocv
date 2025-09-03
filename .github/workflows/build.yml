@@ -38,7 +38,11 @@ jobs:
       - name: deploy on orphan branch
         uses: peaceiris/actions-gh-pages@v4
         with:
+<<<<<<< HEAD
           github_token: "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"
+=======
+          github_token: ${{ secrets.token }}
+>>>>>>> f92bef664dc8a2dea82513e7ecaed548f4bf3199
           publish_dir: ./github_deploy
           publish_branch: build
           force_orphan: true
